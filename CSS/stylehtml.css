@@ -1,0 +1,199 @@
+/* Fonts */
+/* Open Sans, Domine */
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Color Style Rules */
+:root {
+    --background: #e8dcdc;
+    --navbar-footer: #884ab2;
+    --text: #232020;
+    --cta-button: #d1105a;
+    --cta-button-hover: #f24b04;
+}
+
+/* Titles and text Rules */
+h1,
+h2,
+h3 {
+    font-family: "Domine", system-ui;
+}
+
+h2 {
+    color: var(--navbar-footer);
+}
+
+h3 {
+    color: white;
+}
+
+main {
+    font-family: "Open Sans", system-ui;
+}
+
+/* Hero section Styling */
+.hero {
+    position: relative;
+    background: url('../immagini/hero-bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content {
+    max-width: 80%;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: var(--cta-button);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--cta-button-hover);
+}
+
+/* Services section Styling */
+.services {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-box {
+    flex: 1 1 30%;
+    margin: 15px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-box img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-box:hover img {
+    transform: scale(1.1);
+}
+
+.service-box h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.service-box p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* CTA Call to Action section Styling */
+.cta-section {
+    padding: 50px 20px;
+    background-color: #471ca8;
+    color: #fff;
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-content .cta-button {
+    background-color: var(--cta-button);
+}
+
+.cta-content .cta-button:hover {
+    background-color: var(--cta-button-hover);
+}
+
+/* Responsive Web design Hero and Services sections */
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.3rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+    }
+
+    .service-box {
+        flex: 1 1 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 0 10px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .cta-button {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+
+    .service-box {
+        flex: 1 1 100%;
+        margin: 20px 0;
+    }
+
+    .cta-content h2 {
+        font-size: 2rem;
+    }
+
+    .cta-content p {
+        font-size: 1rem;
+    }
+}

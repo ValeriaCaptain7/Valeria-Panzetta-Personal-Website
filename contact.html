@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contatta Valeria Panzetta, Front-End Developer, per collaborazioni e domande sui progetti innovativi e di alta qualità.">
+    <meta name="keywords" content="contatti, collaborazioni, email, sviluppatore web, Valeria Panzetta">
+    <meta name="author" content="Valeria Panzetta">
+    <link rel="canonical" href="https://www.nomesito.com/contact.html">
+    <title data-translate-key="contact-title">Contact | Valeria Panzetta - Front-End Developer</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="languages/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/d0ca4a10fa.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" data-translate-key="nav-home">Home</a></li>
+                <li><a href="about.html" data-translate-key="nav-about">Su di Me</a></li>
+                <li><a href="portfolio.html" data-translate-key="nav-portfolio">Portfolio</a></li>
+                <li><a href="contact.html" data-translate-key="nav-contact">Contattami</a></li>
+                <li>
+                    <label for="language-switcher" class="sr-only">Select Language</label>
+                    <!-- Screen reader only label for accessibility -->
+                    <select id="language-switcher" aria-label="Language selector">
+                        <option value="it" data-translate-key="lang-it">Italiano</option>
+                        <option value="en" data-translate-key="lang-en">English</option>
+                        <option value="fr" data-translate-key="lang-fr">Français</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1 data-translate-key="contact-title">Contatti</h1>
+            <p data-translate-key="contact-p1">Se hai domande o desideri collaborare su un progetto, non esitare a
+                contattarmi.</p>
+            <p data-translate-key="contact-p2">Puoi raggiungermi tramite email o telefono. Sarò felice di discutere le
+                tue idee e come possiamo lavorare insieme.</p>
+            <p data-translate-key="contact-p3">Grazie per aver visitato il mio sito. Spero di poter collaborare presto
+                con te.</p>
+
+            <form>
+                <div>
+                    <label for="name" data-translate-key="contact-form-name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email" data-translate-key="contact-form-email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message" data-translate-key="contact-form-message">Messaggio:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div>
+                    <button type="submit" data-translate-key="contact-form-submit">Invia</button>
+                </div>
+                <p id="thankYouMessage" style="display:none; color:green;" data-translate-key="thank-you-message">
+                    Grazie! Sarai
+                    contattato a breve.</p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p style="color: #f9f9f9;" data-translate-key="footer-text">© - 2024 Valeria Panzetta. Tutti i diritti
+            riservati.</p>
+    </footer>
+</body>
+
+</html>
