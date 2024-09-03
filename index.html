@@ -15,15 +15,19 @@
 
 <body>
     <header>
-        <!-- Navbar -->
+      <!-- Navbar -->
         <nav>
-            <ul>
+            <div class="burger-menu" id="burger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul id="nav-links" class="nav-links">
                 <li><a href="index.html" data-translate-key="nav-home">Home</a></li>
                 <li><a href="about.html" data-translate-key="nav-about">Su di Me</a></li>
                 <li><a href="portfolio.html" data-translate-key="nav-portfolio">Portfolio</a></li>
                 <li><a href="contact.html" data-translate-key="nav-contact">Contattami</a></li>
                 <li>
                     <label for="language-switcher" class="sr-only">Select Language</label>
+                    <!-- Screen reader only label for accessibility -->
                     <select id="language-switcher" aria-label="Language selector">
                         <option value="it" data-translate-key="lang-it">Italiano</option>
                         <option value="en" data-translate-key="lang-en">English</option>
