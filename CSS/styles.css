@@ -71,37 +71,20 @@ header {
     text-decoration: none;
 }
 
-/* Burger menu hidden by default */
-.nav-links {
-    display: flex;
+/* Styles for the burger menu */
+.burger-menu {
+    display: none;
+    /* Hidden by default */
+    font-size: 2rem;
+    cursor: pointer;
+    color: #fff;
+    padding: 10px;
+    margin-right: 20px;
+    /* Adjust margin to prevent overlap */
+    position: relative;
+    /* Ensure it stays in place relative to other elements */
 }
 
-/* Mobile responsive styles - Burger menu on mobile*/
-@media (max-width: 768px) {
-    .burger-menu {
-        display: block;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        background-color: var(--navbar-footer);
-        position: absolute;
-        top: 50px;
-        right: 10px;
-        width: 150px;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .nav-links li {
-        margin: 5px 0;
-    }
-
-    .nav-links.show {
-        display: flex;
-    }
-}
 
 /* Main Content Styling */
 main {
@@ -202,6 +185,7 @@ footer {
         margin: 10px 0;
     }
 
+
     .service-box {
         flex: 1 1 100%;
         margin: 20px 0;
@@ -209,6 +193,54 @@ footer {
 
     .large-photo img {
         max-width: 100%;
+    }
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+    .burger-menu {
+        display: block;
+        /* Show burger menu on mobile */
+    }
+
+    .nav-links {
+        display: none;
+        /* Hide regular nav links on mobile */
+        flex-direction: column;
+        background-color: var(--navbar-footer);
+        position: absolute;
+        top: 50px;
+        right: 10px;
+        width: 100px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-links.show {
+        display: flex;
+        /* Show nav links when burger menu is clicked */
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        /* Ensure header elements have space */
+    }
+
+
+    /* Adjustments for the language switcher inside the burger menu */
+    #language-switcher {
+        width: 100%;
+        /* Make the language selector full width */
+        padding: 5px;
+        margin: 10px 0;
+        border-radius: 5px;
     }
 }
 
