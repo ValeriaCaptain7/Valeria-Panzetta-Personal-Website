@@ -146,6 +146,11 @@ const translations = {
   },
 };
 
+document.getElementById("burger-menu").addEventListener("click", function () {
+  const navLinks = document.getElementById("nav-links");
+  navLinks.classList.toggle("show");
+});
+
 // Contact Form Handling
 const contactForm = document.getElementById("contactForm");
 if (contactForm) {
