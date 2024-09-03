@@ -200,12 +200,10 @@ footer {
 @media (max-width: 768px) {
     .burger-menu {
         display: block;
-        /* Show burger menu on mobile */
     }
 
     .nav-links {
         display: none;
-        /* Hide regular nav links on mobile */
         flex-direction: column;
         background-color: var(--navbar-footer);
         position: absolute;
@@ -230,14 +228,10 @@ footer {
         justify-content: space-between;
         align-items: center;
         padding: 10px 20px;
-        /* Ensure header elements have space */
     }
 
-
-    /* Adjustments for the language switcher inside the burger menu */
     #language-switcher {
         width: 100%;
-        /* Make the language selector full width */
         padding: 5px;
         margin: 10px 0;
         border-radius: 5px;
