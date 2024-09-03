@@ -171,8 +171,11 @@ main {
         padding: 0 10px;
     }
 
-    .hero h1 {
-        font-size: 2rem;
+    .hero h1 {font-size: 1.5rem;
+        /* Adjust title size if needed */
+        margin: 0;
+        flex: 1;
+        /* Allow the title to take up remaining space */
     }
 
     .hero p {
