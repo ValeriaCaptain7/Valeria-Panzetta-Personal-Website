@@ -146,33 +146,30 @@ const translations = {
   },
 };
 
+
 document.getElementById("burger-menu").addEventListener("click", function () {
   const navLinks = document.getElementById("nav-links");
   navLinks.classList.toggle("show");
 });
 
-// Contact Form Handling
 const contactForm = document.getElementById("contactForm");
 if (contactForm) {
   contactForm.addEventListener("submit", function (event) {
-    event.preventDefault(); 
+    event.preventDefault();
 
     const name = document.getElementById("name").value.trim();
     const email = document.getElementById("email").value.trim();
     const message = document.getElementById("message").value.trim();
 
     if (name !== "" && email !== "" && message !== "") {
-      // Mostra il messaggio di ringraziamento
       document.getElementById("thankYouMessage").style.display = "block";
 
-
-      // Reset module after message was sent
       contactForm.reset();
     }
   });
 }
 
-// Change language function
+// Switch language function
 function changeLanguage(language) {
   const elements = document.querySelectorAll("[data-translate-key]");
   elements.forEach((element) => {
@@ -196,7 +193,7 @@ function changeLanguage(language) {
   });
 }
 
-// Change Language Event listener
+// Event listener language switch
 document
   .getElementById("language-switcher")
   .addEventListener("change", (event) => {
@@ -205,7 +202,7 @@ document
     localStorage.setItem("selectedLanguage", selectedLanguage);
   });
 
-// Initial language - Italian
+// Start language -> Italian
 window.addEventListener("DOMContentLoaded", () => {
   const savedLanguage = localStorage.getItem("selectedLanguage") || "it";
   changeLanguage(savedLanguage);
